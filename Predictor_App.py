@@ -13,12 +13,12 @@ st.write(
 
 # Load the saved model and encoders
 try:
-    with open(r"C:\Users\thril\CrossDevice\Thrilochan\Built A Thon\customer_churn_model.pkl", "rb") as f:
+    with open(r"Your Customer churn predicton mode py file path", "rb") as f:
         model_data = pickle.load(f)
     loaded_model = model_data["model"]
     feature_names = model_data["features_names"]
 
-    with open(r"C:\\Users\\thril\\CrossDevice\\Thrilochan\\Built A Thon\\encoders.pkl", "rb") as f:
+    with open(r"Your Customer churn predicton mode py file path", "rb") as f:
         encoders = pickle.load(f)
 except FileNotFoundError as e:
     st.error(f"File not found: {e}")
